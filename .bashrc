@@ -208,6 +208,8 @@ venv_prompt() {
   fi
 }
 
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+
 ruby_env_prompt() {
   local rubyenv=$(rvm current)
 
@@ -221,5 +223,4 @@ export PS1="$(ruby_env_prompt)$(venv_prompt) $txtrst$GREEN[\$(date +%H:%M)]$txtr
 export PS2="> "
 
 source /usr/local/bin/virtualenvwrapper.sh
-
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+source ~/.bash_aliases
