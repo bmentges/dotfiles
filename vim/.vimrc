@@ -3,15 +3,15 @@ colorscheme oceanblack
 
 if has("gui_running")
   if has("gui_gtk2")
-    set guifont=Inconsolata\ 18
+    set guifont=Inconsolata\ 16
   elseif has("gui_photon")
-    set guifont=Inconsolata:s18
+    set guifont=Inconsolata:s16
   elseif has("gui_kde")
-    set guifont=Inconsolata/18/-1/5/50/0/0/0/1/0
+    set guifont=Inconsolata/16/-1/5/50/0/0/0/1/0
   elseif has("x11")
-    set guifont=-*-inconsolata-medium-r-normal-*-*-180-*-*-m-*-*
+    set guifont=-*-inconsolata-medium-r-normal-*-*-160-*-*-m-*-*
   else
-    set guifont=Inconsolata:h18
+    set guifont=Inconsolata:h16
   endif
 endif
 
