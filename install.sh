@@ -14,6 +14,8 @@ install_bash_dotfiles() {
     ln -sf $DIR/.bash_aliases ~/.bash_aliases
     echo -e "\t\tExecuting: ln -sf $DIR/git-completion.bash ~/git-completion.bash"
     ln -sf $DIR/git-completion.bash ~/git-completion.bash
+    echo -e "\t\tExecuting: ln -sf $DIR/.bash_profile ~/.bash_profile"
+    ln -sf $DIR/.bash_profile ~/.bash_profile
     echo -e "\tAll bash aliases successfully installed"
     echo
 }
