@@ -1,0 +1,27 @@
+[user]
+	email = bmentges@gmail.com
+	name = Bruno Mentges de Carvalho
+[push]
+	default = simple
+[core]
+	editor = vi
+[alias]
+	a = add
+	b = branch
+	ci = commit -m
+	cia = commit -am
+	cl = clone
+	co = checkout
+	cob = checkout -b
+	d = diff
+	f = fetch --all
+	l = log
+	m = merge
+	pl = pull
+	ps = push
+	r = rebase
+	s = status
+	st = status
+	ctags = !.git/hooks/ctags
+[init]
+	templatedir = ~/.git_template
