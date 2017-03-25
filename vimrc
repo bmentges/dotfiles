@@ -298,6 +298,11 @@ if !isdirectory("~/.vim/vim_backups")
   echo "Created backup directory: ~/.vim/vim_backups"
 endif
 
-set nobackup "this avoids those ~ files.
-set swapfile "but I want swap files to be there in case of a crash/reboot/network-down
-set dir=~/.vim/vim_backups
+
+set dir=~/.vim/vim_backups " both dir and directory works - :h 'directory' - vim 8
+set directory=~/.vim/vim_backups " both dir and directory works - :h 'directory' - vim 8
+set backupdir=~/.vim/vim_backups
+set undodir=~/.vim/vim_backups
+
+set swapfile "I want swap files to be there in case of a crash/reboot/network-down
+set backup "changed my mind on backup files. want those too, but hidden in the .vim/vim_backups dir.
