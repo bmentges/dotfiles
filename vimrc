@@ -293,7 +293,7 @@ au VimEnter * call FoldLevelDependingOnStartFile()
 
 " instead of disabling, set swapfiles to tmp directory inside .vim
 " we try to create it if it doesnt exist
-if !isdirectory("~/.vim/vim_backups")
+if empty(glob('~/.vim/vim_backups'))
   silent !mkdir ~/.vim/vim_backups > /dev/null 2>&1
   echo "Created backup directory: ~/.vim/vim_backups"
 endif
