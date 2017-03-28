@@ -32,6 +32,7 @@ if &diff
 	set nu
 endif
 
+nnoremap <SPACE> <Nop>
 let mapleader = "\<Space>"
 
 " open newline without entering insert mode
