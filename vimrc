@@ -309,3 +309,7 @@ set undodir=~/.vim/vim_backups
 
 set swapfile "I want swap files to be there in case of a crash/reboot/network-down
 set backup "changed my mind on backup files. want those too, but hidden in the .vim/vim_backups dir.
+
+"" Fix to include dotfiles for ctrlp and NERDTree
+let g:ctrlp_show_hidden=1
+let NERDTreeShowHidden=1
