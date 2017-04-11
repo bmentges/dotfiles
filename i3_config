@@ -194,6 +194,7 @@ bar {
         status_command i3blocks
         tray_output primary
 }
+exec --no-startup-id nm-applet
 
 #######################################################################
 # automatically start i3-config-wizard to offer the user to create a
@@ -206,8 +207,7 @@ bar {
 #######################################################################
 # exec i3-config-wizard
 
-for_window [title="default_tabs"] move workspace number 1
-for_window [title="Slack"] move workspace number 2
-for_window [title="monitoring"] move workspace number 3
+#for_window [title="default_tabs"] move workspace number 1
+#for_window [title="Slack"] move workspace number 2
+#for_window [title="monitoring"] move workspace number 3
 
-exec --no-startup-id nm-applet

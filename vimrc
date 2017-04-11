@@ -217,10 +217,10 @@ nnoremap <C-w>E :SyntasticCheck<CR> :SyntasticToggleMode<CR>
 " vim startify
 let g:startify_change_to_vcs_root = 1
 let g:startify_bookmarks = [ 
-        \ { 'co': '~/dev/checkout' },
-        \ { 'am': '~/dev/amsterdam' },
-        \ { 'lb': '~/dev/library' },
-        \ { 'cb': '~/dev/opsworks-cookbooks' },
+        \ { 'co': '~/projetos/ev/checkout' },
+        \ { 'am': '~/projetos/ev/amsterdam' },
+        \ { 'lb': '~/projetos/ev/library' },
+        \ { 'cb': '~/projetos/ev/opsworks-cookbooks' },
         \]
 let g:startify_list_order = [
         \ ['   My most recently used files in the current directory:'],
